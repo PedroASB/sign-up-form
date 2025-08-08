@@ -12,80 +12,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="sidebar">
+    <div id="sidebar">
         <div class="logo-area">
             <img src="./assets/icons/tropical-trips-logo.svg" alt="Tropical Trips Logo">
             <div class="text">tropical trips</div>
         </div>
         <div class="attributions">
             <!-- Photo by Cams Unltd: https://www.pexels.com/photo/linear-green-leaf-plant-2563854/ -->
-
             <!-- from Pexels -->
         </div>
     </div>
-
-    <div class="main">
+    <div id="main">
         <div id="header">
-            This is not a real life service! You know you need something like this in your life to help you realize your deepest dreams.
-            Sign up <em>now</em> to get started.
-            You <em>know</em> you want to.
+            You know you need something like this in your life to help you realize your deepest dreams! Sign up to get started.
         </div>
 
         <div id="form-box">
-            <h3>Let's do this</h3>
+            <h3 class="title">New Account</h3>
+            <div class="info">
+                Required fields are followed by <span aria-label="required">*</span>
+            </div>
+        
             <form id="create-account" action="" method="post">
-                <fieldset id="row-1">
-                    <div class="field">
-                        <label for="first-name">First name</label>
-                        <input type="text" name="first-name" id="first-name">
+                <fieldset id="objective-data">
+                    <div class="column" id="col-1">
+                        <div class="field">
+                            <label for="first-name">First name <span aria-label="required">*</span></label>
+                            <input type="text" name="first-name" id="first-name" placeholder="John" maxlength="30" required>
+                        </div>
+                        <div class="field">
+                            <label for="date-of-birth">Date of birth <span aria-label="required">*</span></label>
+                            <input type="date" name="date-of-birth" id="date-of-birth" min="1900-01-01" max="2024-12-31" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email <span aria-label="required">*</span></label>
+                            <input type="email" name="email" id="email" placeholder="john@email.com" maxlength="30" required>
+                        </div>
+                        <div class="field">
+                            <label for="password">Password <span aria-label="required">*</span></label>
+                            <input type="password" name="password" id="password" maxlength="40" minlength="6" required>
+                        </div>
+                        <div class="field">
+        
+                        </div>
                     </div>
-
-                    <div class="field">
-                        <label for="last-name">Last name</label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div>
-                </fieldset>
-
-                <fieldset id="row-2">
-                    <div class="field">
-                        <label for="date-of-birth">Date of birth</label>
-                        <input type="date" name="date-of-birth" id="date-of-birth">
-                    </div>
-
-                    <div class="field">
-                        <label for="gender">Gender</label>
-                        <select name="gender" id="gender">
-                            <option value="Female">Female</option>
-                            <option value="Male">Male</option>
-                            <option value="None">Don't specify</option>
-                        </select>
-                    </div>
-                </fieldset>
-
-                <fieldset id="row-3">
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-
-                    <div class="field">
-                        <label for="phone">Phone number</label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
-                </fieldset>
-
-                <fieldset class="password">
-                    <div class="field">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-                    </div>
-
-                    <div class="field">
-                        <label for="password-confirmation">Confirm password</label>
-                        <input type="password" name="password-confirmation" id="password-confirmation">
+                    <div class="column" id="col-2">
+                        <div class="field">
+                            <label for="last-name">Last name <span aria-label="required">*</span></label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Smith" maxlength="30" required>
+                        </div>
+                        <div class="field">
+                            <label for="gender">Gender <span aria-label="required">*</span></label>
+                            <select name="gender" id="gender" required>
+                                <option value="" selected>— Select —</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                                <option value="other">Other</option>
+                                <option value="not-specified">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" name="phone" id="phone" placeholder="(123) 456-7890" maxlength="20">
+                        </div>
+                        <div class="field">
+                            <label for="password-confirmation">Confirm password <span aria-label="required">*</span></label>
+                            <input type="password" name="password-confirmation" id="password-confirmation" maxlength="40" minlength="6" required>
+                        </div>
                     </div>
                 </fieldset>
-
+        
+                <!-- <fieldset id="subjective-data">
+                    <legend>Testing here</legend>
+                    <div>
+                        <label for="foobar" class="checkbox">
+                            <input id="foobar" type="checkbox" name="checkbox" value="----">
+                            <span>Checkbox label text</span>
+                        </label>
+                        <label for="foobar" class="checkbox">
+                            <input id="foobar" type="checkbox" name="checkbox" value="----">
+                            <span>Checkbox label text</span>
+                        </label>
+                        <label for="foobar" class="checkbox">
+                            <input id="foobar" type="checkbox" name="checkbox" value="----">
+                            <span>Checkbox label text</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="foobar" class="checkbox">
+                            <input id="foobar" type="checkbox" name="checkbox" value="----">
+                            <span>Checkbox label text</span>
+                        </label>
+                        <label for="foobar" class="checkbox">
+                            <input id="foobar" type="checkbox" name="checkbox" value="----">
+                            <span>Checkbox label text</span>
+                        </label>
+                        <label for="foobar" class="checkbox">
+                            <input id="foobar" type="checkbox" name="checkbox" value="----">
+                            <span>Checkbox label text</span>
+                        </label>
+                    </div>
+                </fieldset> -->
             </form>
         </div>
 
@@ -95,7 +122,6 @@
         </div>
     </div>
 
-    
 
 </body>
 </html>
