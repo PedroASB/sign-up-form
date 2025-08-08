@@ -1,0 +1,179 @@
+* {
+    /* border: 2px solid red; */
+}
+
+/* .main {
+    background-color: #3a3a3a !important;
+    color: #dadada !important;
+}
+.form-box {
+    background-color: #5f5f5f !important;
+    color: #dadada !important;
+} */
+
+
+/* ===== */
+
+:root {
+    --system-ui: system-ui, 
+                 "Segoe UI", 
+                 Roboto, 
+                 Helvetica, 
+                 Arial, 
+                 sans-serif, 
+                 "Apple Color Emoji", 
+                 "Segoe UI Emoji", 
+                 "Segoe UI Symbol";
+    --green-tropical: #62814e;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: var(--system-ui);
+}
+
+.sidebar {
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 30vw;
+    height: inherit;
+    background-color: #000;
+    background-image: url(./assets/img/sidebar-background.jpg);
+    background-size: cover;
+
+    .logo-area {
+        width: 100%;
+        height: 10rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-top: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+
+        img {
+            height: 6rem;
+        }
+
+        .text {
+            color: #ffffff;
+            font-size: 4rem;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    }
+
+    .attributions {
+        display: none;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1 1 auto;
+    display: flex;
+    height: inherit;
+    background-color: #ecedf1;
+}
+
+#header {
+    font-size: 1.5rem;
+    max-width: 60rem;
+    padding: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#form-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    min-height: 20rem;
+    margin: 2rem 0;
+
+    h3 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
+
+form#create-account {
+    display: flex;
+    flex-direction: column;
+
+    fieldset {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .field {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+label {
+    text-transform: uppercase;
+    font-family: "Average Sans", sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.04rem;
+}
+
+input {
+    width: 30ch;
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+input:focus { 
+    outline: none;
+    border-color: #6370e7;
+}
+
+input:invalid {
+    border-color: #e76363;
+}
+
+#account {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding: 2rem;
+
+    .text {
+        font-weight: 500;
+    }
+}
+
+#log-in {
+    color: var(--green-tropical);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#log-in:hover {
+    text-decoration: underline;
+}
+
+button[type="submit"] {
+    background-color: var(--green-tropical);
+    color: #fff;
+    font: inherit;
+    font-family: sans-serif;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px rgb(218, 218, 218);
+}

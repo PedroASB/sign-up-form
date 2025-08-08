@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-area">
+            <img src="./assets/icons/tropical-trips-logo.svg" alt="Tropical Trips Logo">
+            <div class="text">tropical trips</div>
+        </div>
+        <div class="attributions">
+            <!-- Photo by Cams Unltd: https://www.pexels.com/photo/linear-green-leaf-plant-2563854/ -->
+
+            <!-- from Pexels -->
+        </div>
+    </div>
+
+    <div class="main">
+        <div id="header">
+            This is not a real life service! You know you need something like this in your life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.
+            You <em>know</em> you want to.
+        </div>
+
+        <div id="form-box">
+            <h3>Let's do this</h3>
+            <form id="create-account" action="" method="post">
+                <fieldset id="row-1">
+                    <div class="field">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+
+                    <div class="field">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                </fieldset>
+
+                <fieldset id="row-2">
+                    <div class="field">
+                        <label for="date-of-birth">Date of birth</label>
+                        <input type="date" name="date-of-birth" id="date-of-birth">
+                    </div>
+
+                    <div class="field">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="None">Don't specify</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset id="row-3">
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                </fieldset>
+
+                <fieldset class="password">
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="field">
+                        <label for="password-confirmation">Confirm password</label>
+                        <input type="password" name="password-confirmation" id="password-confirmation">
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>
+
+        <div id="account">
+            <button type="submit" form="create-account">Create Account</button>
+            <div class="text">Already have an account? <a href="#" id="log-in">Log in</a></div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
