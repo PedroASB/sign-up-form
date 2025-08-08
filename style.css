@@ -31,6 +31,7 @@
     --main-bg-color: #ededf3;
     --form-bg-color: #fff;
     --main-font-color: #000;
+    --lighter-font-color: #1f1f22;
 }
 
 body {
@@ -92,9 +93,10 @@ body {
 #header {
     font-size: 1.5rem;
     max-width: 60rem;
-    padding: 1rem 4rem;
+    padding: 2rem 4rem 0 4rem;
     font-weight: bold;
     font-family: sans-serif;
+    color: var(--lighter-font-color);
 }
 
 #form-box {
@@ -113,6 +115,7 @@ body {
         font-size: 1.75rem;
         font-weight: 700;
         margin-bottom: 0.4rem;
+        color: var(--lighter-font-color);
     }
 
     .info {
@@ -176,17 +179,28 @@ fieldset#objective-data {
     }
 }
 
-/* fieldset#subjective-data {
+fieldset#subjective-data {
     display: flex;
     gap: 4rem;
     padding: 0.5rem 2rem;
     border-radius: 8px;
+    border: 2px solid rgb(212, 212, 212);
+    accent-color: var(--green-tropical);
+
+    legend {
+        display: flex;
+        gap: 0.3rem;
+        img {
+            width: 1.3rem;
+            border-radius: 50%;
+        }
+    }
 
     div {
         display: flex;
         flex-direction: column;
     }
-} */
+}
 
 #account {
     display: flex;
