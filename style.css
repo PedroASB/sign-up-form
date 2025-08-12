@@ -181,6 +181,7 @@ fieldset#objective-data {
         height: 2rem;
         padding: 0 0.5rem;
         border: 2px solid #E5E7EB;
+        background-color: inherit;
         border-radius: 4px;
     }
 
@@ -201,14 +202,17 @@ fieldset#objective-data {
 fieldset#subjective-data {
     display: flex;
     gap: 4rem;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 8px;
-    border: 2px solid rgb(212, 212, 212);
+    border: 2px solid #dadada;
     accent-color: var(--green-tropical);
 
     legend {
         display: flex;
         gap: 0.3rem;
+        span {
+            font-weight: 500;
+        }
         img {
             width: 1.3rem;
             border-radius: 50%;
@@ -220,6 +224,57 @@ fieldset#subjective-data {
         flex-direction: column;
     }
 }
+
+
+
+.checkbox {
+    display: grid;
+    grid-template-columns: 1rem auto;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.checkbox + .checkbox {
+    margin-top: 0.65rem;
+}
+
+input[type="checkbox"] {
+    background-color: #fff;
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #acacac;
+    display: grid;
+    place-content: center;
+    border-radius: 0.15rem;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1rem 1rem var(--green-tropical);
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+ 
+
+
+
+
+
+
+
 
 #account {
     display: flex;
