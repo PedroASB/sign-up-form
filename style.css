@@ -13,6 +13,24 @@
 
 /* ===== */
 
+@font-face {
+    font-family: 'Cal Sans';
+    src: url('./assets/fonts/CalSans-Regular.woff2') format('woff2'),
+         url('./assets/fonts/CalSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Average Sans';
+    src: url('./assets/fonts/AverageSans-Regular.woff2') format('woff2'),
+         url('./assets/fonts/AverageSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --system-ui: system-ui, 
                  "Segoe UI", 
@@ -23,6 +41,8 @@
                  "Apple Color Emoji", 
                  "Segoe UI Emoji", 
                  "Segoe UI Symbol";
+    --logo-fonts: 'Cal Sans', sans-serif;
+    --label-fonts: 'Average Sans', sans-serif;
     --green-tropical: #62814e;
     --onfocus: #6370e7;
     --success: #67c07b;
@@ -34,12 +54,12 @@
     --lighter-font-color: #1f1f22;
 }
 
+
 body {
     display: flex;
     height: 100vh;
     font-family: var(--system-ui);
 }
-
 
 #sidebar {
     display: flex;
@@ -65,10 +85,9 @@ body {
         }
 
         .text {
-            color: #ffffff;
+            color: #fff;
             font-size: 4rem;
-            font-family: sans-serif;
-            font-weight: bold;
+            font-family: var(--logo-fonts);
         }
     }
 
@@ -95,7 +114,7 @@ body {
     max-width: 60rem;
     padding: 2rem 4rem 0 4rem;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     color: var(--lighter-font-color);
 }
 
@@ -152,7 +171,7 @@ fieldset#objective-data {
     
     label {
         text-transform: uppercase;
-        font-family: "Average Sans", sans-serif;
+        font-family: var(--label-fonts);
         font-size: 0.95rem;
         letter-spacing: 0.04rem;
     }
@@ -227,7 +246,7 @@ button[type="submit"] {
     background-color: var(--green-tropical);
     color: #fff;
     font: inherit;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     padding: 0.5rem 1rem;
     font-weight: bold;
     border: none;
