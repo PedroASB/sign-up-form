@@ -63,6 +63,8 @@ body {
 
 #sidebar {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex: 1 1 auto;
     max-width: 30vw;
     height: inherit;
@@ -92,7 +94,18 @@ body {
     }
 
     .attributions {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 1 auto;
+        color: #fff;
+        padding: 0.15rem;
+        font-size: 0.9rem;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        a {
+            color: inherit;
+        }
     }
 }
 
@@ -102,20 +115,9 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex: 1 1 auto;
-    display: flex;
-    height: inherit;
+    /* height: fit-content; */
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
-    /* padding: 4rem 0; */
-}
-
-#header {
-    font-size: 1.5rem;
-    max-width: 60rem;
-    padding: 2rem 4rem 0 4rem;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    color: var(--lighter-font-color);
 }
 
 #form-box {
@@ -131,7 +133,7 @@ body {
     box-shadow: 0 6px rgb(231, 231, 231);
 
     .title {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
         font-weight: 700;
         margin-bottom: 0.4rem;
         color: var(--lighter-font-color);
@@ -156,6 +158,8 @@ fieldset#objective-data {
     display: flex;
     gap: 5rem;
     border: none;
+    padding: 0;
+    margin-bottom: 0.5rem;
 
     .column {
         display: flex;
@@ -225,8 +229,6 @@ fieldset#subjective-data {
     }
 }
 
-
-
 .checkbox {
     display: grid;
     grid-template-columns: 1rem auto;
@@ -266,15 +268,6 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
     transform: scale(1);
 }
-
- 
-
-
-
-
-
-
-
 
 #account {
     display: flex;
