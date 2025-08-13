@@ -42,7 +42,7 @@
                         </div>
                         <div class="field">
                             <label for="email">Email <span aria-label="required">*</span></label>
-                            <input type="email" name="email" id="email" placeholder="john@email.com" maxlength="30" required>
+                            <input type="email" name="email" id="email" placeholder="john@email.com" maxlength="30" pattern="^.+@.+\.com$" title="Please fill in an e-mail in the format name@domain.com" required>
                         </div>
                         <div class="field">
                             <label for="password">Password <span aria-label="required">*</span></label>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="field">
                             <label for="phone">Phone number</label>
-                            <input type="tel" name="phone" id="phone" placeholder="(123) 456-7890" maxlength="20">
+                            <input type="tel" name="phone" id="phone" placeholder="(123) 456-7890" pattern="^\([0-9]{3}\)\s?[0-9]{3}-?[0-9]{4}$" title="Fill in a phone number in the format (xxx) xxx-xxxx" maxlength="14">
                         </div>
                         <div class="field">
                             <label for="password-confirmation">Confirm password <span aria-label="required">*</span></label>

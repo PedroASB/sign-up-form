@@ -2,14 +2,13 @@
     /* border: 2px solid red; */
 }
 
-/* .main {
-    --main-bg-color: #5a5a5a;
-    --main-font-color: #fff;
+/* #main {
+    background-color: #5a5a5a !important;
+    color: #fff !important;
 }
 #form-box {
-    --form-bg-color: #444444;
+    background-color: #444444 !important;
 } */
-
 
 /* ===== */
 
@@ -44,6 +43,7 @@
     --logo-fonts: 'Cal Sans', sans-serif;
     --label-fonts: 'Average Sans', sans-serif;
     --green-tropical: #62814e;
+    --green-tropical-lighter: #769163;
     --onfocus: #6370e7;
     --success: #67c07b;
     --error: #e76363;
@@ -54,9 +54,9 @@
     --lighter-font-color: #1f1f22;
 }
 
-
 body {
     display: flex;
+    align-items: flex-start;
     height: 100vh;
     font-family: var(--system-ui);
 }
@@ -115,9 +115,10 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex: 1 1 auto;
-    /* height: fit-content; */
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
+    height: fit-content;
+    height: 100%;
 }
 
 #form-box {
@@ -128,7 +129,8 @@ body {
     background-color: var(--form-bg-color);
     padding: 2rem 4rem;
     width: 100%;
-    min-height: 20rem;
+    /* min-height: 20rem; */
+    height: fit-content;
     margin: 2rem 0;
     box-shadow: 0 6px rgb(231, 231, 231);
 
@@ -151,7 +153,6 @@ body {
 form#create-account {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 fieldset#objective-data {
@@ -300,4 +301,10 @@ button[type="submit"] {
     border: none;
     border-radius: 8px;
     box-shadow: 3px 3px rgb(218, 218, 218);
+    width: 14rem;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--green-tropical-lighter);
+    transition: 0.2s ease-in-out;
 }
