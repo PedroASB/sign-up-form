@@ -2,12 +2,11 @@
 
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Web form](https://img.shields.io/badge/Web_Form-gray?style=for-the-badge&color=374c52)
 
 ## Description
 
-HTML + CSS + JavaScript project.
+HTML + CSS project.
 
 This is a sign-up form for a fictional travel booking platform called "Tropical Trips".
 
