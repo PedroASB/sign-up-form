@@ -6,11 +6,14 @@
 
 ## Description
 
-HTML + CSS project.
-
-This is a sign-up form for a fictional travel booking platform called "Tropical Trips".
-
-It includes a flexbox-based layout, feedback for focus/success/failure when filling a field, form validation and custom styled checkboxes.
+- This is a sign-up form for a fictional travel booking platform called "Tropical Trips" built with HTML and CSS.
+- The design folows this [reference template image](./assets/ref/sign-up-form-reference.png).
+- **Features:**
+    - A flexbox-based layout
+    - Feedback for focus while filling a field
+    - Feedback for success or failure after a field is filled
+    - Form validation
+    - Custom styled checkboxes
 
 ## Live Demo
 
