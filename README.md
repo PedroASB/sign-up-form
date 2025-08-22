@@ -35,3 +35,4 @@ This project is part of the curriculum of [The Odin Project](https://www.theodin
 - Icons by [Google](https://fonts.google.com/icons) – Licensed under Apache 2.0
 - Font copyright © 2021 The Cal Sans Project Authors. Licensed under the [SIL Open Font License, Version 1.1](https://openfontlicense.org). Source: [https://github.com/calcom/font](https://github.com/calcom/font)
 - Font copyright © 2012 Eduardo Tunni, with Reserved Font Name 'Average'. Licensed under the [SIL Open Font License, Version 1.1](https://openfontlicense.org). Source: [http://www.tipo.net.ar](http://www.tipo.net.ar)
+- Sidebar background photo by [Cams Unltd](https://www.pexels.com/photo/linear-green-leaf-plant-2563854/) on Pexels
